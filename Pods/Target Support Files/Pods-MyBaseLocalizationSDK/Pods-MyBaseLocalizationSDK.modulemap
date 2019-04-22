@@ -1,0 +1,6 @@
+framework module Pods_MyBaseLocalizationSDK {
+  umbrella header "Pods-MyBaseLocalizationSDK-umbrella.h"
+
+  export *
+  module * { export * }
+}
