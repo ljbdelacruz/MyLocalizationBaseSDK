@@ -30,6 +30,7 @@ Just build and copy the little briefcase in the project where you want to use it
 all you have to do is basically set
 
 MBLConfig.myLocale = .en
+
 Note: the locale options can be set in the MyAppLocale script see above to learn more on what it does
 
 then basically all you have to do is 
