@@ -1,6 +1,6 @@
 # MyLocalizationBaseSDK
 localization framework for any project centralize and minimize work
-
+and basically portable localization used it on my several projects
 
 
 HOW TO USE IN YOUR PROJECT:
