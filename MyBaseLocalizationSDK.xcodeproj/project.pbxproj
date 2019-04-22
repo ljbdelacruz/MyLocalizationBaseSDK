@@ -9,6 +9,11 @@
 /* Begin PBXBuildFile section */
 		368115C80E8A93A3A5E104CA /* Pods_MyBaseLocalizationSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62D6A229180ED77EA2B1DD36 /* Pods_MyBaseLocalizationSDK.framework */; };
 		EEAE3E46226DEC2400D8170D /* MyBaseLocalizationSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = EEAE3E44226DEC2400D8170D /* MyBaseLocalizationSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EEAE3E4E226DED4600D8170D /* Localization.plist in Resources */ = {isa = PBXBuildFile; fileRef = EEAE3E4D226DED4600D8170D /* Localization.plist */; };
+		EEAE3E52226DEDEF00D8170D /* String+.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E51226DEDEF00D8170D /* String+.swift */; };
+		EEAE3E54226DEE4A00D8170D /* MyAppLocale.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E53226DEE4A00D8170D /* MyAppLocale.swift */; };
+		EEAE3E57226DEEA300D8170D /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E56226DEEA300D8170D /* Constants.swift */; };
+		EEAE3E5A226DEF1000D8170D /* PlistExtractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EEAE3E59226DEF1000D8170D /* PlistExtractor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,6 +23,11 @@
 		EEAE3E41226DEC2400D8170D /* MyBaseLocalizationSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = MyBaseLocalizationSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EEAE3E44226DEC2400D8170D /* MyBaseLocalizationSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyBaseLocalizationSDK.h; sourceTree = "<group>"; };
 		EEAE3E45226DEC2400D8170D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EEAE3E4D226DED4600D8170D /* Localization.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Localization.plist; sourceTree = "<group>"; };
+		EEAE3E51226DEDEF00D8170D /* String+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+.swift"; sourceTree = "<group>"; };
+		EEAE3E53226DEE4A00D8170D /* MyAppLocale.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAppLocale.swift; sourceTree = "<group>"; };
+		EEAE3E56226DEEA300D8170D /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EEAE3E59226DEF1000D8170D /* PlistExtractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistExtractor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,10 +63,55 @@
 		EEAE3E43226DEC2400D8170D /* MyBaseLocalizationSDK */ = {
 			isa = PBXGroup;
 			children = (
+				EEAE3E58226DEF0200D8170D /* services */,
+				EEAE3E55226DEE9700D8170D /* config */,
+				EEAE3E50226DEDE100D8170D /* extensions */,
+				EEAE3E4F226DEDDA00D8170D /* enum */,
+				EEAE3E4C226DED2400D8170D /* Localization */,
 				EEAE3E44226DEC2400D8170D /* MyBaseLocalizationSDK.h */,
 				EEAE3E45226DEC2400D8170D /* Info.plist */,
 			);
 			path = MyBaseLocalizationSDK;
+			sourceTree = "<group>";
+		};
+		EEAE3E4C226DED2400D8170D /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E4D226DED4600D8170D /* Localization.plist */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		EEAE3E4F226DEDDA00D8170D /* enum */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E53226DEE4A00D8170D /* MyAppLocale.swift */,
+			);
+			path = enum;
+			sourceTree = "<group>";
+		};
+		EEAE3E50226DEDE100D8170D /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E51226DEDEF00D8170D /* String+.swift */,
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		EEAE3E55226DEE9700D8170D /* config */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E56226DEEA300D8170D /* Constants.swift */,
+			);
+			path = config;
+			sourceTree = "<group>";
+		};
+		EEAE3E58226DEF0200D8170D /* services */ = {
+			isa = PBXGroup;
+			children = (
+				EEAE3E59226DEF1000D8170D /* PlistExtractor.swift */,
+			);
+			path = services;
 			sourceTree = "<group>";
 		};
 		EF0F3F0D2452C2055B04B0DC /* Pods */ = {
@@ -121,6 +176,7 @@
 				TargetAttributes = {
 					EEAE3E40226DEC2400D8170D = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -146,6 +202,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAE3E4E226DED4600D8170D /* Localization.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -200,6 +257,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EEAE3E52226DEDEF00D8170D /* String+.swift in Sources */,
+				EEAE3E54226DEE4A00D8170D /* MyAppLocale.swift in Sources */,
+				EEAE3E57226DEEA300D8170D /* Constants.swift in Sources */,
+				EEAE3E5A226DEF1000D8170D /* PlistExtractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = AADD9413E8F379410B597C0C /* Pods-MyBaseLocalizationSDK.debug.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -349,6 +411,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = ljbdelacruz.MyBaseLocalizationSDK;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -358,6 +421,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D5DA7392AE8C1E6D1D82EAED /* Pods-MyBaseLocalizationSDK.release.xcconfig */;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;

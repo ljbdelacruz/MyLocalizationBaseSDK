@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<!--
+   Localization.plist
+   MyBaseLocalizationSDK
+
+   Created by Lainel John Dela Cruz on 22/04/2019.
+   Copyright (c) 2019 Lainel John Dela Cruz. All rights reserved.
+-->
+<plist version="1.0">
+    <dict>
+        <key>username</key>
+        <array>
+            <string>ឈ្មោះគណនី</string>
+            <string>ユーザー名</string>
+            <string>Username</string>
+        </array>
+        
+        
+        
+    </dict>
+</plist>
